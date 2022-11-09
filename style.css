@@ -103,6 +103,7 @@ nav.side-navbar a:hover {
 }
 .nickname {
   color: #da2d5a;
+  /* text-shadow: -0.1rem -0.1rem #84f2fc, 0.1rem 0.1rem #da2d5a; */
 }
 .home-cont-img {
   background-color: #e8e8e8;
@@ -117,22 +118,44 @@ nav.side-navbar a:hover {
   font-family: "Inter", sans-serif;
   font-size: large;
 }
+.intro-cont {
+  display: flex;
+  /* color: #da2d5a; */
+  align-items: center;
+  /* justify-content: space-around; */
+  text-align: start;
+  /* text-shadow: -0.2rem -0.2rem #84f2fc, 0.1rem 0.1rem #da2d5a; */
+}
+.intro-cont i {
+  font-size: 40px;
+  /* font-weight: 100px; */
+  margin: 20px;
+}
+#hi {
+  font-weight: 1;
+  font-size: 40px;
+}
 .infotext .name {
   font-size: 40px;
+}
+.infotext h4 {
+  font-weight: lighter;
+  margin-top: -20px;
 }
 
 .cont-socials {
   width: auto;
   margin: 20%;
   /* background-color: beige; */
-  margin-top: -5px;
+  margin-top: 40px;
 }
 .cont-socials a {
-  color: black;
-  margin-right: 10px;
+  color: #da2d5a;
+  margin-right: 30px;
 }
-.cont-socials i {
-  size: 50px;
+.cont-socials a i {
+  color: #da2d5a;
+  font-size: 30px;
 }
 
 /* PICTURE PINK */
