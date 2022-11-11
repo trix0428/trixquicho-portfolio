@@ -9,7 +9,6 @@ html {
 /* SIDEBAR */
 
 nav.side-navbar {
-  /* background-color: antiquewhite; */
   position: fixed;
   top: 20%;
   left: 85%;
@@ -29,6 +28,7 @@ nav.side-navbar:before {
 nav.side-navbar a {
   text-decoration: none;
   font-family: "Montserrat";
+  font-weight: 600;
   background-image: linear-gradient(
     to right,
     #000000,
@@ -108,7 +108,7 @@ nav.side-navbar a:hover {
 .home-cont-img {
   background-color: #e8e8e8;
   flex: 1;
-  padding-top: 40px;
+  padding-top: 100px;
 }
 /* HI IM BIANCA */
 .infotext {
@@ -127,20 +127,29 @@ nav.side-navbar a:hover {
   /* text-shadow: -0.2rem -0.2rem #84f2fc, 0.1rem 0.1rem #da2d5a; */
 }
 .intro-cont i {
-  font-size: 40px;
-  /* font-weight: 100px; */
+  font-size: 20px;
+  color: #fc8caa;
+
   margin: 20px;
 }
-#hi {
-  font-weight: 1;
-  font-size: 40px;
+#greeting {
+  font-size: 18px;
+  font-weight: 600;
+  color: #adadad;
+}
+.intro-cont h2 {
+  font-weight: 400;
 }
 .infotext .name {
   font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
 }
 .infotext h4 {
-  font-weight: lighter;
-  margin-top: -20px;
+  font-weight: 300;
+  margin-top: -10px;
+  font-style: italic;
+  /* color: #adadad; */
 }
 
 .cont-socials {
@@ -197,7 +206,7 @@ nav.side-navbar a:hover {
   background-color: #da2d5a;
 }
 .btn_skills {
-  background-color: #da2d5a !important;
+  background-color: #da2d5a;
 }
 
 .container.second {
@@ -238,24 +247,25 @@ nav.side-navbar a:hover {
   /* background-color: #adadad; */
 }
 
-/* SKILLS */
-
-.skills-main-cont {
+.skills-main-cont,
+.hobbies-main-cont {
   /* background-color: #e8e8e8; */
 }
-.skills-elements {
+.skills-elements,
+.hobbies-elements {
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
-
+.skills-elements h3,
+.hobbies-elements h3 {
+  font-weight: 600;
+}
 .software {
   display: flex;
   justify-content: space-evenly;
   /* background-color: #adadad; */
 }
-
-/* EDUCATION */
 
 .educ-sub-cont {
   display: flex;
@@ -290,7 +300,20 @@ nav.side-navbar a:hover {
 /* THIRD CONTAINER*/
 /* FOURTH CONTAINER*/
 /* FIFTH CONTAINER*/
+.awards-main-cont {
+  display: flex;
+}
+.awards-sub-cont {
+  display: flex;
 
+  background-color: #adadad;
+}
+.sub-cont {
+  flex: 1;
+}
+.sub-cont.two {
+  display: flex;
+}
 /* SIXTH CONTAINER*/
 .contact-main-cont {
   display: flex;
@@ -318,10 +341,12 @@ nav.side-navbar a:hover {
   flex-direction: column;
   margin-top: 80px;
 }
-.contact-cont2 h2 {
+.contact-cont2 p {
   flex: 1;
   margin-left: 5%;
   font-size: 30px;
+  color: #da2d5a;
+  font-weight: 600;
 }
 .input-cont {
   flex: 1;
