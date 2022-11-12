@@ -364,7 +364,7 @@ nav.side-navbar a:hover {
   border-radius: 5px;
   border: 1px solid #adadad;
 }
-.input-cont input[type="text"][id="message"] {
+.input-cont input[type="text"][id="message_id"] {
   width: 100%;
   padding-bottom: 150px;
   margin: 4px 0;
