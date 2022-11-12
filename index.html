@@ -291,31 +291,37 @@
         </div>
         <div class="contact-cont2">
           <p>Send me a message...</p>
-          <form
-            class="input-cont"
-            action="https://formsubmit.co/el/yukuze"
-            method="POST"
-          >
-            <input type="text" placeholder="Name" name="Name" required />
+          <form class="input-cont">
+            <input type="text" id="name_id" placeholder="Name" required />
             <input
               type="text"
+              id="email_id"
               placeholder="Email Address"
               name="Email"
               required
             />
-            <input type="text" placeholder="Subject" />
+            <input type="text" id="subject_id" placeholder="Subject" required />
             <input
               type="text"
-              id="message"
+              id="message_id"
               placeholder="Type your message here..."
               name="Message"
               required
             />
-            <button type="submit">Send</button>
+            <button id="submit" onclick="SendMail()">Send</button>
           </form>
         </div>
       </div>
     </div>
-    <script src="main.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_GhSltrAFGLjMXb92r");
+      })();
+    </script>
   </body>
 </html>

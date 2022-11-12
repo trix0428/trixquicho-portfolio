@@ -372,7 +372,7 @@ nav.side-navbar a:hover {
   border-radius: 5px;
   border: 1px solid #adadad;
 }
-.input-cont button[type="submit"] {
+#submit {
   background-color: #da2d5a;
   color: white;
   border: none;
