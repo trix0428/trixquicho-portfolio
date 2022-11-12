@@ -46,7 +46,7 @@ nav.side-navbar a {
 nav.side-navbar ul li {
   text-align: right;
   list-style: none;
-  padding: 10px;
+  padding: 18px;
   /* background-color: aliceblue; */
   margin: 5px;
   font-size: large;
@@ -205,9 +205,9 @@ nav.side-navbar a:hover {
 .about-buttons button:focus {
   background-color: #da2d5a;
 }
-.btn_skills {
+/* #btn_about:active {
   background-color: #da2d5a;
-}
+} */
 
 .container.second {
   display: flex;
@@ -460,7 +460,7 @@ nav.about-navbar ul li {
     padding: 0;
   } */
 
-  .side-navbar .navbar-toggler {
+  /* .side-navbar .navbar-toggler {
     visibility: visible;
     display: block;
     position: fixed;
@@ -473,8 +473,8 @@ nav.about-navbar ul li {
     outline: none;
     padding: 0 5px;
     cursor: pointer;
-  }
-  .side-navbar .navbar-toggler span,
+  } */
+  /* .side-navbar .navbar-toggler span,
   .side-navbar .navbar-toggler span::before,
   .side-navbar .navbar-toggler span::after {
     display: block;
@@ -484,7 +484,7 @@ nav.about-navbar ul li {
     border-radius: 4px;
     transition: all ease-in-out 0.3s;
     background-color: #da2d5a;
-  }
+  } */
   .side-navbar .navbar-toggler span::before {
     transform: translateY(-8px);
   }
