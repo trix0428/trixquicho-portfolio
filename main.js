@@ -26,35 +26,55 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 var btn_about = document.getElementById("btn_about");
 var btn_skills = document.getElementById("btn_skills");
+var btn_exp = document.getElementById("btn_exp");
 var btn_educ = document.getElementById("btn_educ");
 var btn_hobbies = document.getElementById("btn_hobbies");
 
 var content_about = document.getElementById("content_about");
 var content_skills = document.getElementById("content_skills");
+var content_exp = document.getElementById("content_exp");
 var content_educ = document.getElementById("content_educ");
 var content_hobbies = document.getElementById("content_hobbies");
 
 btn_about.addEventListener("click", () => {
   content_about.style.display = "block";
   content_skills.style.display = "none";
+  content_exp.style.display = "none";
   content_educ.style.display = "none";
   content_hobbies.style.display = "none";
 });
 btn_skills.addEventListener("click", () => {
   content_about.style.display = "none";
   content_skills.style.display = "block";
+  content_exp.style.display = "none";
   content_educ.style.display = "none";
   content_hobbies.style.display = "none";
 });
 btn_educ.addEventListener("click", () => {
   content_about.style.display = "none";
   content_skills.style.display = "none";
+  content_exp.style.display = "none";
   content_educ.style.display = "block";
+  content_hobbies.style.display = "none";
+});
+btn_educ.addEventListener("click", () => {
+  content_about.style.display = "none";
+  content_skills.style.display = "none";
+  content_exp.style.display = "none";
+  content_educ.style.display = "block";
+  content_hobbies.style.display = "none";
+});
+btn_exp.addEventListener("click", () => {
+  content_about.style.display = "none";
+  content_skills.style.display = "none";
+  content_exp.style.display = "block";
+  content_educ.style.display = "none";
   content_hobbies.style.display = "none";
 });
 btn_hobbies.addEventListener("click", () => {
   content_about.style.display = "none";
   content_skills.style.display = "none";
+  content_exp.style.display = "none";
   content_educ.style.display = "none";
   content_hobbies.style.display = "block";
 });
