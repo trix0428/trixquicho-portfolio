@@ -189,9 +189,12 @@ nav.side-navbar a:hover {
 
 .about-buttons button {
   width: 18%;
-  background-color: #ffafc4;
-  color: white;
+  /* background-color: #ffafc4; */
+  background-color: #ffdce6;
+  box-shadow: 8px 8px 12px #f2d1db, -8px -8px 12px #ffe7f2;
+  color: #f79ab2;
   font-weight: bold;
+  font-family: inter;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -203,10 +206,17 @@ nav.side-navbar a:hover {
   /* margin-right: 150px; */
 }
 .about-buttons button:hover {
-  background-color: #fc8caa;
+  /* background-color: #fc8caa; */
+  box-shadow: 8px 8px 12px #f2d1db, -8px -8px 12px #ffe7f2,
+    0px 0px 5px 3px #fcedf1 inset;
 }
 .about-buttons button:focus {
+  color: #f79ab2;
   background-color: #da2d5a;
+  box-shadow: inset 5px 5px 12px #cf2b56, inset -5px -5px 12px #e52f5f;
+}
+.about-buttons button:focus:hover {
+  box-shadow: 0px 0px 5px 3px #8f1536 inset;
 }
 /* #btn_about:active {
   background-color: #da2d5a;
@@ -306,7 +316,43 @@ nav.side-navbar a:hover {
 /* SECOND SECTION - CLICKING NAV */
 
 /* THIRD CONTAINER*/
-/* FOURTH CONTAINER*/
+.projects-main-cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+.projects-sub-cont {
+  /* background-color: #424242; */
+  align-content: center;
+}
+
+.projects-sub-cont-top img {
+  width: 430px;
+  height: 280px;
+  object-fit: cover;
+  box-shadow: 5px 5px 20px #d9d9d9, -5px -5px 20px #ffffff;
+  border-radius: 20px;
+}
+.projects-sub-cont-top img:hover {
+}
+.project-title {
+  margin-top: 10px;
+  font-weight: 800;
+  text-shadow: 0.1rem 0.1rem #84f2fc;
+}
+.project-tags {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 0.5em;
+}
+.project-tags p {
+  border: 1px solid #da2d5a;
+  border-radius: 100px;
+  padding: 5px 10px;
+  font-size: smaller;
+  text-align: center;
+}
+
 /* FIFTH CONTAINER*/
 .awards-main-cont {
   display: grid;
@@ -442,7 +488,8 @@ nav.side-navbar a:hover {
   border-radius: 10px;
   /* box-shadow: inset 5px 5px 10px #c22850, inset -5px -5px 10px #f23264;
    */
-  box-shadow: 2px 2px 10px #d9d9d9, -2px -2px 10px #ffffff;
+  /* box-shadow: 2px 2px 10px #d9d9d9, -2px -2px 10px #ffffff; */
+  box-shadow: 5px 5px 12px #f2f2f2, -5px -5px 12px #f7f7f7;
   font-weight: 600;
   font-family: Montserrat;
 }
