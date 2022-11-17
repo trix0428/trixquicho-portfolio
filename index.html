@@ -29,18 +29,22 @@
   </head>
   <body>
     <!-- SIDE NAVIGATION BAR -->
-    <nav class="side-navbar">
-      <button class="navbar-toggler">
-        <span></span>
-      </button>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#cont-second">About</a></li>
-        <li><a href="#cont-third">Projects</a></li>
-        <li><a href="#cont-fifth">Awards</a></li>
-        <li><a href="#cont-sixth">Contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav class="side-navbar">
+        <ul class="nav-items">
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#cont-second">About</a></li>
+          <li><a class="nav-link" href="#cont-third">Projects</a></li>
+          <li><a class="nav-link" href="#cont-fifth">Awards</a></li>
+          <li><a class="nav-link" href="#cont-sixth">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
     <!-- HOME -->
     <div class="container first">
       <div class="home-main-cont">
@@ -132,47 +136,55 @@
           <div class="skills-elements">
             <div class="skill prototype">
               <img
+                id="skill-graphic"
                 src="./assets/skills/img-prototype.png"
                 width="320px"
                 alt=""
               />
               <h3>Prototyping</h3>
               <div class="software">
-                <img src="/assets/logo_figma.png" alt="" />
+                <img src="./assets/logo_figma.png" alt="" />
               </div>
             </div>
             <div class="skill photoedit">
               <img
+                id="skill-graphic"
                 src="./assets/skills/img-graphics.png"
                 width="320px"
                 alt=""
               />
               <h3>Photo Editing & Graphics</h3>
               <div class="software">
-                <img src="/assets/logo_ps.png" alt="" />
-                <img src="/assets/logo_ai.png" alt="" />
-                <img src="/assets/logo_maya.png" alt="" />
+                <img src="./assets/logo_ps.png" alt="" />
+                <img src="./assets/logo_ai.png" alt="" />
+                <img src="./assets/logo_maya.png" alt="" />
               </div>
             </div>
             <div class="skill graphics">
               <img
+                id="skill-graphic"
                 src="./assets/skills/img-videoedit.png"
                 width="320px"
                 alt=""
               />
               <h3>Video Editing</h3>
               <div class="software">
-                <img src="/assets/logo_pr.png" alt="" />
-                <img src="/assets/logo_ae.png" alt="" />
+                <img src="./assets/logo_pr.png" alt="" />
+                <img src="./assets/logo_ae.png" alt="" />
               </div>
             </div>
             <div class="skill webdev">
-              <img src="./assets/skills/img-webdev.png" width="320px" alt="" />
+              <img
+                id="skill-graphic"
+                src="./assets/skills/img-webdev.png"
+                width="320px"
+                alt=""
+              />
               <h3>Web Development</h3>
               <div class="software">
-                <img src="/assets/logo_html.png" alt="" />
-                <img src="/assets/logo_css.png" alt="" />
-                <img src="/assets/logo_js.png" alt="" />
+                <img src="./assets/logo_html.png" alt="" />
+                <img src="./assets/logo_css.png" alt="" />
+                <img src="./assets/logo_js.png" alt="" />
               </div>
             </div>
           </div>
@@ -261,6 +273,7 @@
           <div class="hobbies-elements">
             <div class="hobby watch">
               <img
+                id="hobby-graphic"
                 src="./assets/hobbies/img-watchmovies.png"
                 width="320px"
                 alt=""
@@ -268,16 +281,31 @@
               <h3>Watching Series and Movies</h3>
             </div>
             <div class="hobby music">
-              <img src="./assets/hobbies/img-dance.png" width="320px" alt="" />
+              <img
+                id="hobby-graphic"
+                src="./assets/hobbies/img-dance.png"
+                width="320px"
+                alt=""
+              />
               <h3>Dancing</h3>
             </div>
 
             <div class="hobby music">
-              <img src="./assets/hobbies/img-games.png" width="320px" alt="" />
+              <img
+                id="hobby-graphic"
+                src="./assets/hobbies/img-games.png"
+                width="320px"
+                alt=""
+              />
               <h3>Playing and Streaming Games</h3>
             </div>
             <div class="hobby music">
-              <img src="./assets/hobbies/img-music.png" width="320px" alt="" />
+              <img
+                id="hobby-graphic"
+                src="./assets/hobbies/img-music.png"
+                width="320px"
+                alt=""
+              />
               <h3>Singing and Playing instruments</h3>
             </div>
           </div>
