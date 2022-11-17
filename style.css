@@ -112,7 +112,7 @@ nav.side-navbar a:hover {
 .home-cont-intro {
   flex: 1;
 
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
 }
@@ -188,6 +188,7 @@ nav.side-navbar a:hover {
   position: absolute;
   left: 45%;
   top: 10%;
+  z-index: 0;
 }
 
 /* SECOND CONTAINER = ABOUT*/
@@ -762,7 +763,7 @@ nav.about-navbar ul li {
   .nav-items {
     position: fixed;
     left: 100%;
-    top: 50px;
+    top: 0px;
     gap: 0;
     flex-direction: column;
     background-color: #424242;
@@ -770,12 +771,11 @@ nav.about-navbar ul li {
     text-align: center;
     transition: 0.3s;
     height: 100%;
-    padding-top: 0;
     margin: 0;
+    padding-top: 5%;
   }
   .nav-items.active {
     left: -18%;
-    position: fixed;
   }
 
   nav.side-navbar ul li {
@@ -785,6 +785,16 @@ nav.about-navbar ul li {
     margin: 20px;
   }
 }
+header{
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: block;
+  
+}
+/* .container.first{
+  margin-top: 60px
+} */
 
 /* nav.side-navbar {
    
