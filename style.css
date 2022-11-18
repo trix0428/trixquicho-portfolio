@@ -666,7 +666,7 @@ nav.about-navbar ul li {
   }
 
   .sub-cont.left img {
-    width: 160px;
+    /* width: 160px; */
   }
 
   .sub-cont.right {
@@ -687,7 +687,7 @@ nav.about-navbar ul li {
   }
 
   .contact-cont1 img {
-    width: 80%;
+    /* width: 80%; */
   }
   .input-cont input[type="text"][id="message_id"] {
     width: 100%;
@@ -746,10 +746,13 @@ nav.about-navbar ul li {
 @media (max-width: 768px) {
   .hamburger {
     display: block;
-    left: 80%;
+    left: 0%;
     top: 2%;
-    /* background-color: #424242; */
+    background-color: #424242;
     position: fixed;
+    width: 100%;
+    text-align: right;
+ 
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -763,19 +766,19 @@ nav.about-navbar ul li {
   .nav-items {
     position: fixed;
     left: 100%;
-    top: 0px;
+    top: 0;
     gap: 0;
     flex-direction: column;
-    background-color: #424242;
-    width: 120%;
+    background-color: #ffdce6;
+    width: 100%;
     text-align: center;
     transition: 0.3s;
     height: 100%;
     margin: 0;
-    padding-top: 5%;
+    /* padding-top: 5%; */
   }
   .nav-items.active {
-    left: -18%;
+    left: 0%;
   }
 
   nav.side-navbar ul li {
@@ -784,14 +787,41 @@ nav.about-navbar ul li {
     padding: 18px;
     margin: 20px;
   }
+
+/* AWARDS */
+
+.awards-main-cont {
+  grid-gap: 0.5em;
 }
-header{
+
+.sub-cont.left img {
+}
+
+.awards-sub-cont-info .sub-cont.right {
+  display: grid;
+  /* background-color: #adadad; */
+  grid-template-rows: 4fr 1fr;
+}
+.awards-sub-cont-info .sub-cont {
+  padding: 20px;
+}
+
+.sub-cont-text p {
+  color: #424242;
+}
+
+.sub-cont-buttons {
+  grid-gap: 0.5em;
+}
+
+}
+/* header{
   top: 0;
   position: fixed;
   width: 100%;
   display: block;
   
-}
+} */
 /* .container.first{
   margin-top: 60px
 } */
