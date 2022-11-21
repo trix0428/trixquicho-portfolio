@@ -22,16 +22,13 @@ html {
 }
 .parallax-title {
   position: absolute;
-  width: 100%;
-  /* text-align: center; */
-
+  left: 10%;
   top: 100px;
   font-family: montserrat;
   font-weight: 600;
   font-size: 100px;
   color: #ffff;
   text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.49);
-  /* text-shadow: -0.2rem -0.2rem #84f2fc, 0.2rem 0.2rem #da2d5a; */
 }
 .container {
   margin: 5% 10%;
@@ -41,23 +38,121 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0.5em;
-  background-color: #ffdce6;
   line-height: 30px;
 }
 .sub-cont.one {
   display: flex;
   flex-direction: column;
 }
-.sub-list.title {
+.sub-list.title,
+.second-container .title {
   font-family: montserrat;
   font-weight: 600;
   color: #da2d5a;
 }
+.sub-list.info {
+  text-align: justify;
+}
+.sub-cont.two {
+  text-align: right;
+}
 .sub-cont img {
   width: 80%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px #d9d9d9, -5px -5px 20px #ffffff;
 }
 .sub-cont .sub-list.info #skill-graphic {
   width: 50px;
 }
-#cover-image {
+.scroll-down {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #f5b6c8;
+  /* background-color: #ffdce6; */
+}
+.scroll-down img {
+  margin-top: -30px;
+}
+.second-container {
+  margin-top: 10%;
+  row-gap: -0.5em;
+}
+.second-cont {
+  display: flex;
+  justify-content: space-evenly;
+
+  flex-wrap: wrap;
+  column-gap: 1em;
+  row-gap: 1em;
+  margin: 5% 0;
+}
+.second-cont img {
+  height: 350px;
+}
+.second-cont.posters {
+  display: flex;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-gap: 1em;
+  /* background-color: #f5b6c8; */
+  padding: 0 15%;
+
+  align-items: center;
+}
+.second-cont.second-cont.posters img {
+  height: 300px;
+  box-shadow: 5px 5px 20px #d9d9d9, -5px -5px 20px #ffffff;
+}
+
+/* FOOTER */
+footer {
+  background-color: #ffdce6;
+  display: block;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+}
+.footer-socials {
+  text-align: center;
+}
+.footer-socials a {
+  color: #da2d5a;
+  /* margin-right: 30px; */
+}
+.footer-socials a i {
+  color: #da2d5a;
+  font-size: 40px;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-navigation {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+.footer-navigation a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #da2d5a;
+  font-size: 14px;
+  padding: 20px;
+  font-weight: 600;
+}
+
+.footer-navigation ul li {
+  text-align: center;
+  list-style: none;
+  margin: 20px;
+
+  /* background-color: aliceblue; */
+}
+footer p {
+  font-size: 12px;
+  font-family: montserrat;
 }
