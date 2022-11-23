@@ -191,18 +191,10 @@ nav.side-navbar a:hover {
 
 /* SECOND CONTAINER = ABOUT*/
 .about-buttons {
-  /* background-color: #000000; */
-  /* width: 50%; */
-
   display: flex;
   text-align: center;
   column-gap: 1em;
-  /* grid-auto-columns: auto; */
-  /* margin-bottom: 30px; */
-  /* justify-content: space-evenly;*/
 
-  /* margin-left: 50px; */
-  /* margin-right: 50px; */
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -231,6 +223,7 @@ nav.side-navbar a:hover {
   /* background-color: #fc8caa; */
   box-shadow: 8px 8px 12px #f2d1db, -8px -8px 12px #ffe7f2,
     0px 0px 5px 3px #fcedf1 inset;
+  transition: 0.7s;
 }
 .about-buttons button:focus {
   color: #f79ab2;
