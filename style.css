@@ -321,7 +321,7 @@ nav.side-navbar a:hover {
 /* THIRD CONTAINER*/
 .projects-main-cont {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 1em;
 }
 .projects-sub-cont {
@@ -359,7 +359,8 @@ nav.side-navbar a:hover {
 .projects-sub-cont-top {
   --gap: 0px;
   --num-cols: 3;
-  --row-height: 250px;
+  /* --row-height: 250px; */
+  --row-height: 300px;
 
   box-sizing: border-box;
   padding: var(--gap);
