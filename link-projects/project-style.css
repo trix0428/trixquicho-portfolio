@@ -126,9 +126,7 @@ img#yesdoc-ui {
 }
 .second-cont.posters {
   display: flex;
-  /* grid-template-columns: repeat(3, 1fr); */
   grid-gap: 1em;
-  /* background-color: #f5b6c8; */
   padding: 0 15%;
 
   align-items: center;
@@ -142,9 +140,7 @@ img#yesdoc-ui {
   row-gap: 1em;
   column-gap: 1em;
 }
-/* .second-cont.wireframes p {
-  text-align: justify;
-} */
+
 .second-cont.wireframes img {
   box-shadow: 0px 0px 10px #d9d9d9, 0px 0px 10px #ffffff;
   height: 300px;
@@ -177,7 +173,6 @@ footer {
 }
 .footer-socials a {
   color: #da2d5a;
-  /* margin-right: 30px; */
 }
 .footer-socials a i {
   color: #da2d5a;
@@ -187,10 +182,8 @@ footer {
 }
 
 .footer-navigation {
-  /* background-color: aqua; */
   display: flex;
   justify-content: center;
-  /* flex-direction: column; */
 }
 
 .footer-navigation a {
@@ -206,8 +199,6 @@ footer {
   text-align: center;
   list-style: none;
   margin: 20px;
-
-  /* background-color: aliceblue; */
 }
 footer p {
   font-size: 12px;
@@ -221,7 +212,6 @@ footer p {
 
     grid-gap: 0.5em;
     line-height: 30px;
-    /* padding: 0; */
   }
   .sub-cont.one:nth-of-type(1) {
     order: 2;
@@ -242,9 +232,6 @@ footer p {
   .parallax-title {
     font-size: 70px;
   }
-  /* img#cc-mockup-card {
-    width: 200px;
-  } */
   .footer-navigation a {
     color: #da2d5a;
     font-size: 14px;
