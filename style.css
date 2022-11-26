@@ -280,7 +280,7 @@ nav.side-navbar a:hover {
 .skills-elements,
 .hobbies-elements {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
   flex-wrap: wrap;
 }
@@ -787,19 +787,61 @@ nav.about-navbar ul li {
   }
 
   .home-main-cont {
-    display: flex;
+    display: grid;
+    grid-auto-rows: 1fr;
+    padding: 10%;
+
+  }
+  .home-cont-intro{
+    display: block;
+ 
   }
   .home-cont-img {
+   grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     position: block;
-    left: 0;
-    top: 0;
+    left: auto;
+    top: auto; 
+    background-color: #ffff;
   }
   .home-cont-img img {
-    width: 30%;
-    left: 47%;
-    top: 10%;
+    width: 35%;
+    position: block;
+    left: auto;
+    top: auto;
+    z-index: 0;
+    padding-bottom: 50%;
+
   }
+  .infotext {
+    margin: 0%;
+    padding: 0;
+   
+  }
+  
+  .cont-socials{
+    padding-top:  0%;
+    margin: 0;
+    margin-top: 5%;
+
+  }
+  /* span.name{
+   font-size: 16px; 
+   font-weight: 400;
+  } */
+.infotext p{
+  margin: 0px;
+  font-size: 16px;
+}
+.infotext h4{
+  margin: 0;
+  
+  margin-top: 2%;
+}
+
 
   .container.second,
   .container.third,
@@ -889,34 +931,90 @@ nav.about-navbar ul li {
     font-size: 20px;
   }
 }
+@media (max-width: 460px)   {
+  .home-cont-img img{
+    width: 60%;
+  }
+}
 @media (max-width: 425px) {
+
+
+
+/* PROJECTS */
+.projects-main-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+.projects-sub-cont-top {
+  --gap: 0px;
+  --num-cols: 3;
+  /* --row-height: 250px; */
+  --row-height: 150px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-auto-rows: var(--row-height);
+  /* gap: var(--gap); */
+}
+.projects-sub-cont-top > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
   /* AWARDS */
   .awards-sub-cont {
-    display: flex;
-    grid-template-columns: 0;
-    grid-template-rows: 1fr;
+    display: grid;
+    grid-template-columns: 2fr;
   }
   .awards-main-cont {
     grid-gap: 0.5em;
   }
+  .sub-cont-info {
+    display: grid;
+    grid-template-rows: (repeat 1, 1fr);
+  }
   .sub-cont.left {
-    display: flex;
+     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    /* overflow: hidden;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr; */
+  
+    
   }
   .sub-cont.left img {
-    width: 150px;
+    width: 160px;
+    object-fit: cover;
+    
   }
 
   .awards-sub-cont-info .sub-cont.right {
+    display: grid;
     grid-row-start: 2;
-    grid-template-rows: 4fr 1fr;
+    grid-template-rows: 1fr;
+    /* grid-template-columns: 1fr; */
+
+    /* grid-template-rows: none; */
+    flex-direction: column;
 
     /* background-color: #424242; */
   }
-  .awards-sub-cont-info .sub-cont {
+  .awards-sub-cont-info {
+    display: grid;
+    /* grid-template-rows: (repeat 1, 1fr); */
+    padding-top: 10px;
+  
+      grid-template-columns: none;
+    }
     /* padding: 20px; */
-  }
+  
   .sub-cont-text h4 {
     font-size: 16px;
   }
@@ -924,18 +1022,30 @@ nav.about-navbar ul li {
     color: #424242;
     font-size: 16px;
   }
+  .sub-cont-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .sub-cont-buttons button {
+    padding: 10px;
+    width: 50%;
+  }
 
   /* main */
   .awards-main-cont {
-    display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(425px, 1fr));
+    /* display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(425px, 1fr)); */
     /* 
     grid-auto-rows: 2;
     grid-gap: 1em; */
   }
+}
+@media (max-width: 1024px){
+  
 
   /* Contact */
   .contact-main-cont {
+    
     column-gap: 0.5em;
 
     grid-template-columns: 1fr;
@@ -943,12 +1053,15 @@ nav.about-navbar ul li {
   .contact-cont1 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
   }
   .contact-cont1 p {
     font-size: small;
   }
   .contact-cont1 img {
     width: 300px;
+    
   }
   .contact-cont2 p {
     font-size: 20px;
