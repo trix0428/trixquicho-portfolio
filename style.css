@@ -73,10 +73,9 @@ nav.side-navbar a:hover {
 
 /* CONTAINERS */
 .container.first,
-.container.second,
-.container.third,
-.container.fourth,
-.container.fifth {
+.container.second
+
+ {
   /* display: block; */
   height: 100vh;
   /* background-color: #ffafc4; */
@@ -298,6 +297,7 @@ nav.side-navbar a:hover {
 .exp-sub-cont {
   display: flex;
   justify-content: center;
+  align-items: center;
   /* grid-template-columns: repeat(2, 1fr); */
   /* background-color: #adadad; */
 }
@@ -671,6 +671,7 @@ nav.about-navbar ul li {
   /* AWARDS */
   .awards-main-cont {
     grid-gap: 0.5em;
+   
   }
 
   .sub-cont.right {
@@ -748,7 +749,7 @@ nav.about-navbar ul li {
 @media (max-width: 768px) {
   .hamburger {
     display: block;
-    left: 95%;
+    left: 90%;
     top: 2%;
     position: fixed;
     /* width: 100%; */
@@ -777,7 +778,9 @@ nav.about-navbar ul li {
     padding-top: 5%;
   }
   .nav-items.active {
-    left: 0%;
+    left: 0;
+    margin: 0;
+    padding: 0;
   }
 
   nav.side-navbar ul li {
@@ -789,7 +792,8 @@ nav.about-navbar ul li {
   .home-main-cont {
     display: grid;
     grid-auto-rows: 1fr;
-    padding: 10%;
+    margin: 10%;
+    margin-bottom: 0;
 
   }
   .home-cont-intro{
