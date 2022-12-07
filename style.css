@@ -155,15 +155,18 @@ nav.side-navbar a:hover {
   font-weight: 400;
 }
 .infotext .name {
-  font-size: 40px;
+  font-size: 45px;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
 }
-.infotext h4 {
-  font-weight: 300;
+.infotext h4 a {
+  font-size: 24px;
+  font-weight: 600;
   margin-top: -10px;
-  font-style: italic;
-  /* color: #adadad; */
+  /* font-style: italic; */
+  color: #adadad;
+  text-decoration: none;
+
 }
 
 .cont-socials {
@@ -174,7 +177,7 @@ nav.side-navbar a:hover {
 }
 .cont-socials a {
   color: #da2d5a;
-  margin-right: 30px;
+  margin-right: 60px;
 }
 .cont-socials a i {
   color: #da2d5a;
@@ -185,7 +188,7 @@ nav.side-navbar a:hover {
 .home-cont-img img {
   width: 20%;
   position: absolute;
-  left: 45%;
+  left: 48%;
   top: 10%;
   z-index: 0;
 }
@@ -525,7 +528,7 @@ nav.side-navbar a:hover {
   /* border: 1px solid #adadad; */
   border: none;
 }
-#submit {
+#submit_id {
   /* background-color: #da2d5a;
    */
   background-color: white;
@@ -541,6 +544,7 @@ nav.side-navbar a:hover {
   box-shadow: 5px 5px 12px #f2f2f2, -5px -5px 12px #f7f7f7;
   font-weight: 600;
   font-family: Montserrat;
+  cursor: pointer;
 }
 
 /* FOOTER */
@@ -953,10 +957,13 @@ nav.about-navbar ul li {
   .home-cont-img img{
     width: 60%;
   }
+
 }
 @media (max-width: 425px) {
 
-
+.cont-socials a {
+  margin-right: 40px;
+}
 
 /* PROJECTS */
 .projects-main-cont {
@@ -1079,7 +1086,7 @@ nav.about-navbar ul li {
   }
   .contact-cont1 img {
     width: 300px;
-    
+  
   }
   .contact-cont2 p {
     font-size: 20px;

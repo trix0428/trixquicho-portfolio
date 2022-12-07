@@ -129,7 +129,14 @@
               data-aos-delay="800"
               data-aos-duration="1000"
             >
-              An aspiring UI/UX Designer
+              <a
+                href=""
+                class="typewrite"
+                data-period="2000"
+                data-type='[ "A UI/UX Designer", "A Graphic Illustrator." ]'
+              >
+                <span class="wrap"></span
+              ></a>
             </h4>
           </div>
           <div class="cont-socials">
@@ -857,23 +864,37 @@
         >
           <p>Send me a message...</p>
           <form class="input-cont">
-            <input type="text" id="name_id" placeholder="Name" required />
+            <input
+              type="text"
+              id="name_id"
+              placeholder="Name"
+              required
+              class="name_id"
+            />
             <input
               type="text"
               id="email_id"
               placeholder="Email Address"
               name="Email"
               required
+              class="email_id"
             />
-            <input type="text" id="subject_id" placeholder="Subject" required />
+            <input
+              type="text"
+              id="subject_id"
+              placeholder="Subject"
+              required
+              class="subject_id"
+            />
             <input
               type="text"
               id="message_id"
               placeholder="Type your message here..."
               name="Message"
+              class="message_id"
               required
             />
-            <button id="submit" onclick="SendMail()">Send</button>
+            <button id="submit_id" class="submit_id">Send</button>
           </form>
         </div>
       </div>
@@ -893,6 +914,7 @@
       </div>
       <p>Copyright © 2022 Bianca Beatrix Quicho. All Rights Reserved.</p>
     </footer>
+
     <script src="main.js" type="text/javascript"></script>
     <script
       type="text/javascript"
@@ -903,6 +925,67 @@
         emailjs.init("user_GhSltrAFGLjMXb92r");
       })();
     </script>
+    <!-- Sweet alert js -->
+    <!-- <script>
+      // service_xyvk7um
+    </script> -->
+    <script>
+      function validate() {
+        let name = document.querySelector(".name_id");
+        let email = document.querySelector(".email_id");
+        let subject = document.querySelector(".subject_id");
+        let msg = document.querySelector(".message_id");
+        let btncontact = document.querySelector(".submit_id");
+
+        btncontact.addEventListener("click", (e) => {
+          e.preventDefault();
+          if (
+            name.value == "" ||
+            email.value == "" ||
+            subject.value == "" ||
+            msg.value == ""
+          ) {
+            inputempty();
+          } else {
+            loader.style.display = "flex";
+            sendMail(name.value, email.value, subject.value, msg.value);
+            success();
+            // loader.style.display = "none";
+          }
+        });
+      }
+      validate();
+
+      function sendMail(name, email, subject, msg) {
+        emailjs.send("service_xyvk7um", "template_1gkv9zf", {
+          name_id: name,
+          email_id: email,
+          subject_id: subject,
+          message_id: msg,
+        });
+      }
+
+      function success() {
+        swal.fire(
+          "Message sent successfully!",
+          "Thank you for reaching out.",
+          "success"
+        );
+      }
+
+      function error() {
+        swal.fire("Message not delivered!", "Please try again.", "error");
+      }
+      function inputempty() {
+        swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Fields cannot be empty!",
+        });
+      }
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
