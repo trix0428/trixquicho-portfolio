@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project-style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>RiderKo</title>
+  </head>
+  <body>
+    <div class="parallax">
+      <div class="parallax-bg-holder five"></div>
+      <div class="parallax-title">RiderKo</div>
+    </div>
+    <div class="container">
+      <div class="main-cont">
+        <div class="sub-cont one">
+          <div class="sub-cont-box">
+            <div class="sub-list title"><h3>About</h3></div>
+            <div class="sub-list info">
+              <p>
+                RiderKo is a 100% Filipino developed mobile application that
+                offers on demand food and mart orders as well as door to door
+                delivery services designed to empower its partners. The purpose
+                of this case study competition is to create a business proposal
+                for RiderKo to help stand out as a Filipino owned business. This
+                case study is ranked 3rd place out of 11 teams.
+              </p>
+            </div>
+          </div>
+          <div class="sub-cont-box">
+            <div class="sub-list title"><h3>Role</h3></div>
+            <div class="sub-list info">
+              <p>
+                I joined as solo and was grouped with 3 random participants.
+                Worked as a UI/UX Designer and Researcher
+              </p>
+            </div>
+          </div>
+          <div class="sub-cont-box">
+            <div class="sub-list title"><h3>Tools Used</h3></div>
+            <div class="sub-list info">
+              <img id="skill-graphic" src="../assets/logo_ps.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="sub-cont two">
+          <img
+            id="cover-image"
+            src="../assets/projects/five-riderko/img_riderko-cover.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="scroll-down">
+        <h4>Scroll Down</h4>
+        <img src="../assets/projects/arrow_pink.gif" width="80px" alt="" />
+      </div>
+      <div class="sections">
+        <div class="sidebar-process">
+          <h2>Process</h2>
+          <a href="#title-designproc"><p>Design Process</p></a>
+          <a href="#title-datagather"> <p>Data Gathering</p></a>
+
+          <a href="#title-compet"> <p>Competitive Analysis</p></a>
+          <a href="#title-swot"> <p>SWOT Analysis</p></a>
+          <a href="#title-solution"> <p>Solution</p></a>
+          <a href="#title-ia"> <p>Information Architecture</p></a>
+          <a href="#title-ui"> <p>High-Fi Wireframe</p></a>
+        </div>
+        <div class="content-container">
+          <div class="second-container">
+            <div class="second-sub-cont">
+              <div class="title" id="title-designproc">
+                <h3>Design Process</h3>
+              </div>
+              <div class="second-cont logo">
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-designprocess.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="second-container">
+              <div class="title" id="title-datagather">
+                <h3>Data Gathering</h3>
+              </div>
+              <div class="second-cont riderko-datagather">
+                <h3>1. Age</h3>
+                <div class="data-analysis">
+                  <div class="pie-chart one">
+                    <!-- <canvas id="mycanvas-one" width="200" height="180"></canvas> -->
+                    <div class="canvas-cont">
+                      <canvas id="age-chart" width="50" height="50"></canvas>
+                    </div>
+
+                    <script>
+                      var xValues = ["18-24", "25-34"];
+                      var yValues = [19, 1];
+                      var barColors = ["#dc3912", "#ff9900"];
+                      new Chart("age-chart", {
+                        type: "pie",
+                        data: {
+                          datasets: [
+                            {
+                              backgroundColor: barColors,
+                              data: yValues,
+                            },
+                          ],
+                        },
+                        options: {
+                          legend: { display: false },
+                        },
+                      });
+                    </script>
+                    <div class="legend">
+                      <h5>Legend</h5>
+                      <table>
+                        <tr>
+                          <td><span class="dot one"></span></td>
+                          <td>
+                            <p>18</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot two"></span></td>
+                          <td>
+                            <p>18-24</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot three"></span></td>
+                          <td>
+                            <p>25-34</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot four"></span></td>
+                          <td>
+                            <p>35-44</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot five"></span></td>
+                          <td>
+                            <p>45-54</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot six"></span></td>
+                          <td>
+                            <p>55-64</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot seven"></span></td>
+                          <td>
+                            <p>Above 64</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="data-info">
+                    <p>
+                      According to this graph 95% are within the student range
+                      that's why it's important we maximize our deals, discounts
+                      and more.
+                    </p>
+                  </div>
+                </div>
+                <h3>2. City where you currently live</h3>
+                <div class="data-analysis">
+                  <div class="pie-chart two">
+                    <!-- <canvas id="mycanvas-one" width="200" height="180"></canvas> -->
+                    <div class="canvas-cont">
+                      <canvas id="loc-chart" width="50" height="50"></canvas>
+                    </div>
+
+                    <script>
+                      var xValues = [
+                        "Quezon City",
+                        "Caloocan",
+                        "Valenzuela",
+                        "Others",
+                      ];
+                      var yValues = [5, 2, 2, 11];
+                      var barColors = [
+                        "#3366cc",
+                        "#dc3912",
+                        "#ff9900",
+                        "#109618",
+                      ];
+                      new Chart("loc-chart", {
+                        type: "pie",
+                        data: {
+                          datasets: [
+                            {
+                              backgroundColor: barColors,
+                              data: yValues,
+                            },
+                          ],
+                        },
+                        options: {
+                          legend: { display: false },
+                        },
+                      });
+                    </script>
+                    <div class="legend">
+                      <h5>Legend</h5>
+                      <table>
+                        <tr>
+                          <td><span class="dot one"></span></td>
+                          <td>
+                            <p>Quezon City</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot two"></span></td>
+                          <td>
+                            <p>Caloocan</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot three"></span></td>
+                          <td>
+                            <p>Valenzuela</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="dot four"></span></td>
+                          <td>
+                            <p>Others</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="data-info">
+                    <p>
+                      Part of being able to cater to our customers is making
+                      sure that we understand that they're from different
+                      locations with different tastes with different needs
+                      that's why having a variety of brands benefits both
+                      RiderKo and its potential customers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <h3>3. Are you familiar with RiderKo?</h3>
+              <div class="data-analysis">
+                <div class="pie-chart one">
+                  <!-- <canvas id="mycanvas-one" width="200" height="180"></canvas> -->
+                  <div class="canvas-cont">
+                    <canvas
+                      id="familiarity-chart"
+                      width="50"
+                      height="50"
+                    ></canvas>
+                  </div>
+
+                  <script>
+                    var xValues = ["No", "Yes"];
+                    var yValues = [19, 1];
+                    var barColors = ["#dc3912", "#3366cc"];
+                    new Chart("familiarity-chart", {
+                      type: "pie",
+                      data: {
+                        datasets: [
+                          {
+                            backgroundColor: barColors,
+                            data: yValues,
+                          },
+                        ],
+                      },
+                      options: {
+                        legend: { display: false },
+                      },
+                    });
+                  </script>
+                  <div class="legend">
+                    <h5>Legend</h5>
+                    <table>
+                      <tr>
+                        <td><span class="dot one"></span></td>
+                        <td>
+                          <p>Yes</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot two"></span></td>
+                        <td>
+                          <p>No</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="data-info">
+                  <p>
+                    According to this graph 95% are not familiar with RiderKo.
+                  </p>
+                </div>
+              </div>
+
+              <h3>4. When you hear RiderKo, what comes into your mind?</h3>
+              <div class="second-cont riderko-compet">
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-q4.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="data-info">
+                <p>
+                  Most of the respondents have similar answers when asked if
+                  what comes to their mind when they hear RiderKo.
+                </p>
+              </div>
+            </div>
+
+            <div class="second-container">
+              <div class="title" id="title-compet">
+                <h3>Competitive Analysis</h3>
+              </div>
+              <div class="second-cont riderko-compet">
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-competanalysis.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="second-container">
+              <div class="title" id="title-swot">
+                <h3>SWOT Analysis</h3>
+              </div>
+              <div class="second-cont riderko-swot">
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-swot.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="second-container">
+              <div class="title" id="title-solution">
+                <h3>Solution</h3>
+              </div>
+              <div class="second-cont riderko-solution">
+                <ul>
+                  <li>Support Local (Basta Lokal, i-RiderKo na yan)</li>
+
+                  <li>OTP for delivery confirmation</li>
+                  <li>Continuous app updates</li>
+                  <li>
+                    Partnerships with brands, celebrities, universities and
+                    companies
+                  </li>
+                  <li>Promotional Materials</li>
+                  <li>Internships</li>
+                  <li>Re-design Social Media Account</li>
+                </ul>
+              </div>
+            </div>
+            <div class="second-container">
+              <div class="title" id="title-ia">
+                <h3>Information Architecture</h3>
+              </div>
+              <div class="second-cont riderko-ia">
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-infoarchi.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="second-container">
+              <div class="title" id="title-ui">
+                <h3>High-Fidelity Wireframe</h3>
+              </div>
+              <div class="second-cont riderko-wireframes">
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-ui1.png"
+                  alt=""
+                />
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-ui2.png"
+                  alt=""
+                />
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-ui3.png"
+                  alt=""
+                />
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-ui4.png"
+                  alt=""
+                />
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-ui5.png"
+                  alt=""
+                />
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-ui6.png"
+                  alt=""
+                />
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-ui7.png"
+                  alt=""
+                />
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-ui8.png"
+                  alt=""
+                />
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-ui9.png"
+                  alt=""
+                />
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-ui10.png"
+                  alt=""
+                />
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-ui11.png"
+                  alt=""
+                />
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-ui12.png"
+                  alt=""
+                />
+                <img
+                  src="../assets/projects/five-riderko/img_riderko-ui13.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/trixquicho/"
+          ><i class="fa-brands fa-linkedin fa-lg"></i
+        ></a>
+        <a href="https://github.com/trix0428"
+          ><i class="fa-brands fab fa-github fa-lg"></i
+        ></a>
+        <a href="https://www.behance.net/trixquicho"
+          ><i class="fa-brands fa-square-behance fa-lg"> </i
+        ></a>
+      </div>
+      <!-- <div class="footer-navigation">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#cont-second">About</a>
+        <a class="nav-link" href="#cont-third">Projects</a>
+        <a class="nav-link" href="#cont-fourth">Awards</a>
+        <a class="nav-link" href="#cont-fifth">Contact</a>
+      </div> -->
+      <p>Copyright © 2022 Bianca Beatrix Quicho. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -4,6 +4,7 @@ html {
   font-style: Inter;
   scroll-behavior: smooth;
 }
+
 .parallax {
   background-color: #ffdce6;
 }
@@ -24,6 +25,11 @@ html {
   min-height: 300px;
   width: auto;
   background-image: url("../assets/projects/two-yesdoc/img_yesdoc-one.png");
+}
+.parallax-bg-holder.five {
+  min-height: 300px;
+  width: auto;
+  background-image: url("../assets/projects/five-riderko/img_riderko-cover.png");
 }
 .parallax-title {
   position: absolute;
@@ -61,6 +67,7 @@ html {
   /* background-color: #f5b6c8; */
 }
 .main-cont {
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0.5em;
@@ -126,66 +133,142 @@ html {
 .second-container {
   margin-top: 10%;
   row-gap: -0.5em;
+  /* background-color: #ffdce6; */
 }
 .second-cont {
-  display: flex;
-  justify-content: space-evenly;
-
-  flex-wrap: wrap;
-  column-gap: 1em;
-  row-gap: 1em;
   margin: 5% 0;
 }
-.second-cont img {
-  height: 350px;
+.second-cont.logo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 50px;
 }
+.second-cont.mockup {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 50px;
+  align-items: center;
+}
+.second-cont.posters {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-gap: 10px;
+  align-items: center;
+}
+.second-cont.stories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 10px;
+  align-items: center;
+}
+.second-cont.story-covers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 50px;
+  align-items: center;
+}
+
+.second-cont img {
+  width: 100%;
+}
+
 .second-cont p {
   line-height: 30px;
   text-align: justify;
 }
 img#cc-mockup-card {
-  height: 200px;
 }
 img#yesdoc-ui {
-  height: 600px;
   box-shadow: 5px 5px 20px #d9d9d9, -5px -5px 20px #ffffff;
 }
-.second-cont.posters {
-  display: flex;
-  grid-gap: 1em;
-  padding: 0 15%;
-
-  align-items: center;
-}
-.second-cont.wireframes .row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  row-gap: 1em;
-  column-gap: 1em;
-}
-
 .second-cont.wireframes img {
   box-shadow: 0px 0px 10px #d9d9d9, 0px 0px 10px #ffffff;
-  height: 300px;
   justify-content: center;
 }
 .second-cont.posters img {
-  height: 300px;
   box-shadow: 5px 5px 20px #d9d9d9, -5px -5px 20px #ffffff;
 }
 .second-cont.stories img {
-  height: 450px;
   box-shadow: 5px 5px 20px #d9d9d9, -5px -5px 20px #ffffff;
 }
 .second-cont.story-covers img {
-  height: 300px;
   box-shadow: 5px 5px 20px #d9d9d9, -5px -5px 20px #ffffff;
   border-radius: 100%;
 }
 
+/* RIDERKO */
+.second-cont.riderko-solution {
+  line-height: 200%;
+}
+.second-cont.riderko-wireframes img {
+  box-shadow: none;
+}
+.second-cont.riderko-wireframes {
+  grid-gap: 0;
+}
+.second-cont.riderko-datagather {
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+}
+.data-analysis {
+  margin-bottom: 10%;
+}
+
+.pie-chart {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, (100px, 2fr)); */
+  grid-template-columns: 30% 60%;
+}
+.canvas-cont {
+  align-items: center;
+  justify-content: center;
+}
+.legend {
+  /* background-color: #c56d86; */
+  padding-left: 20%;
+}
+tr,
+td {
+  padding: 0 20px;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: block;
+}
+.dot.one {
+  background-color: #3366cc;
+}
+.dot.two {
+  background-color: #dc3912;
+}
+.dot.three {
+  background-color: #ff9900;
+}
+.dot.four {
+  background-color: #109618;
+}
+.dot.five {
+  background-color: #990099;
+}
+.dot.six {
+  background-color: #0099c6;
+}
+.dot.seven {
+  background-color: #dd4477;
+}
+.dot.eight {
+  background-color: #ff9900;
+}
+.dot.nine {
+  background-color: #ff9900;
+}
+.legend p {
+  /* width: 100px; */
+  /* margin-left: 10px; */
+  font-size: 12px;
+}
 /* FOOTER */
 footer {
   background-color: #ffdce6;
@@ -236,13 +319,14 @@ footer p {
     display: none;
   }
   .content-container {
-    margin: 3% 10%;
+    margin: 0%;
   }
   .main-cont {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0.5em;
     line-height: 30px;
+    /* background-color: aliceblue; */
   }
   .sub-cont.one:nth-of-type(1) {
     order: 2;

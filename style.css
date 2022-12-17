@@ -326,7 +326,7 @@ nav.side-navbar a:hover {
 /* THIRD CONTAINER*/
 .projects-main-cont {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
 }
 .projects-sub-cont {
@@ -357,6 +357,8 @@ nav.side-navbar a:hover {
 }
 .projects-sub-cont-top:hover {
   transform: translateY(-5px);
+
+  /* NOT YET WORKING */
 }
 .projects-sub-cont-top:hover::before {
   left: 150%;

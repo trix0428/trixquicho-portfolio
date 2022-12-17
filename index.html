@@ -636,6 +636,41 @@
             </div>
           </div>
         </div>
+
+        <div class="projects-sub-cont one">
+          <div
+            class="projects-sub-cont-top"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            onclick="window.open('https:/www.behance.net/gallery/144677363/TechnoFest-Web-Jam-2022','_blank')"
+            ;
+          >
+            <img
+              src="../assets/projects/five-riderko/img_riderko-cover.png"
+              alt=""
+            />
+          </div>
+          <div class="projects-sub-cont-bot">
+            <div
+              class="project-title"
+              data-aos="zoom-in-right"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+            >
+              KadaKareer X RiderKo Case Study
+            </div>
+            <div class="project-tags">
+              <p
+                data-aos="zoom-in"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+              >
+                UI/UX Design
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -863,11 +898,12 @@
           data-aos-duration="1000"
         >
           <p>Send me a message...</p>
-          <form class="input-cont">
+          <form class="input-cont" id="contact-form">
             <input
               type="text"
               id="name_id"
               placeholder="Name"
+              name="name"
               required
               class="name_id"
             />
@@ -875,7 +911,7 @@
               type="text"
               id="email_id"
               placeholder="Email Address"
-              name="Email"
+              name="email"
               required
               class="email_id"
             />
@@ -883,6 +919,7 @@
               type="text"
               id="subject_id"
               placeholder="Subject"
+              name="subject"
               required
               class="subject_id"
             />
@@ -890,11 +927,16 @@
               type="text"
               id="message_id"
               placeholder="Type your message here..."
-              name="Message"
+              name="message"
               class="message_id"
               required
             />
-            <button id="submit_id" class="submit_id">Send</button>
+            <input
+              type="submit"
+              id="submit_id"
+              class="submit_id"
+              value="Send"
+            />
           </form>
         </div>
       </div>
@@ -915,55 +957,52 @@
       <p>Copyright © 2022 Bianca Beatrix Quicho. All Rights Reserved.</p>
     </footer>
 
+    <!-- MAIN JS -->
     <script src="main.js" type="text/javascript"></script>
+
+    <!-- EMAIL NOTIFICATION -->
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("user_GhSltrAFGLjMXb92r");
-      })();
-    </script>
-    <!-- Sweet alert js -->
-    <!-- <script>
-      // service_xyvk7um
-    </script> -->
     <script>
-      function validate() {
-        let name = document.querySelector(".name_id");
-        let email = document.querySelector(".email_id");
-        let subject = document.querySelector(".subject_id");
-        let msg = document.querySelector(".message_id");
-        let btncontact = document.querySelector(".submit_id");
-
-        btncontact.addEventListener("click", (e) => {
-          e.preventDefault();
-          if (
-            name.value == "" ||
-            email.value == "" ||
-            subject.value == "" ||
-            msg.value == ""
-          ) {
-            inputempty();
-          } else {
-            loader.style.display = "flex";
-            sendMail(name.value, email.value, subject.value, msg.value);
-            success();
-            // loader.style.display = "none";
-          }
-        });
-      }
-      validate();
-
-      function sendMail(name, email, subject, msg) {
-        emailjs.send("service_xyvk7um", "template_1gkv9zf", {
-          name_id: name,
-          email_id: email,
-          subject_id: subject,
-          message_id: msg,
-        });
-      }
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            if (
+              this.name.value == "" ||
+              this.email.value == "" ||
+              this.subject.value == "" ||
+              this.message.value == ""
+            ) {
+              //actually no need na tong condition sa taas or validation mo kase may required attribute ka naman sa input tag
+              //pero kung mag sspecial validation ka like sa name bawal may numbers tas correct email format, doon mo lang to pwedeng gamitin
+              alert("Empty");
+              console.log("Empty");
+            } else {
+              emailjs
+                .sendForm(
+                  "service_xyvk7um",
+                  "template_1gkv9zf",
+                  this,
+                  "GhSltrAFGLjMXb92r"
+                )
+                .then(
+                  function () {
+                    alert("SENT");
+                    console.log("SENT");
+                  },
+                  function (error) {
+                    alert("ERROR");
+                    console.log("ERROR");
+                  }
+                );
+              event.target.reset();
+            }
+          });
+      };
 
       function success() {
         swal.fire(
@@ -976,6 +1015,7 @@
       function error() {
         swal.fire("Message not delivered!", "Please try again.", "error");
       }
+
       function inputempty() {
         swal.fire({
           icon: "error",
@@ -984,8 +1024,11 @@
         });
       }
     </script>
+
+    <!-- SWEETALERT -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <!-- ANIMATION ON SLIDE -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
