@@ -214,7 +214,8 @@ img#yesdoc-ui {
   margin-bottom: 10%;
 }
 
-.pie-chart {
+.pie-chart,
+.bar-chart {
   display: grid;
   /* grid-template-columns: repeat(auto-fit, (100px, 2fr)); */
   grid-template-columns: 30% 60%;
@@ -238,31 +239,34 @@ td {
   display: block;
 }
 .dot.one {
-  background-color: #3366cc;
+  background-color: #ffa283;
 }
 .dot.two {
-  background-color: #dc3912;
+  background-color: #f3e73a;
 }
 .dot.three {
-  background-color: #ff9900;
+  background-color: #ffd391;
 }
 .dot.four {
-  background-color: #109618;
+  background-color: #aef393;
 }
 .dot.five {
-  background-color: #990099;
+  background-color: #fabcfa;
 }
 .dot.six {
-  background-color: #0099c6;
+  background-color: #98e7ff;
 }
 .dot.seven {
-  background-color: #dd4477;
+  background-color: #fcb5cd;
 }
 .dot.eight {
-  background-color: #ff9900;
+  background-color: #bbfafc;
 }
 .dot.nine {
   background-color: #ff9900;
+}
+.dot.ten {
+  background-color: #74322d;
 }
 .legend p {
   /* width: 100px; */

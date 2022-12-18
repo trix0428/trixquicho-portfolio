@@ -61,7 +61,8 @@
           <div class="sub-cont-box">
             <div class="sub-list title"><h3>Tools Used</h3></div>
             <div class="sub-list info">
-              <img id="skill-graphic" src="../assets/logo_ps.png" alt="" />
+              <img id="skill-graphic" src="../assets/logo_canva.png" alt="" />
+              <img id="skill-graphic" src="../assets/logo_figma.png" alt="" />
             </div>
           </div>
         </div>
@@ -118,7 +119,7 @@
                     <script>
                       var xValues = ["18-24", "25-34"];
                       var yValues = [19, 1];
-                      var barColors = ["#dc3912", "#ff9900"];
+                      var barColors = ["#ffa283", "#f3e73a"];
                       new Chart("age-chart", {
                         type: "pie",
                         data: {
@@ -207,10 +208,10 @@
                       ];
                       var yValues = [5, 2, 2, 11];
                       var barColors = [
-                        "#3366cc",
-                        "#dc3912",
-                        "#ff9900",
-                        "#109618",
+                        "#ffa283",
+                        "#f3e73a",
+                        "#ffd391",
+                        "#aef393",
                       ];
                       new Chart("loc-chart", {
                         type: "pie",
@@ -281,9 +282,9 @@
                   </div>
 
                   <script>
-                    var xValues = ["No", "Yes"];
-                    var yValues = [19, 1];
-                    var barColors = ["#dc3912", "#3366cc"];
+                    var xValues = ["Yes", "No"];
+                    var yValues = [1, 19];
+                    var barColors = ["#f3e73a", "#ffa283"];
                     new Chart("familiarity-chart", {
                       type: "pie",
                       data: {
@@ -326,131 +327,651 @@
 
               <h3>4. When you hear RiderKo, what comes into your mind?</h3>
               <div class="second-cont riderko-compet">
-                <img
-                  src="../assets/projects/five-riderko/img_riderko-q4.png"
-                  alt=""
-                />
+                <div class="data-analysis">
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-q4.png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="data-info">
+                  <p>
+                    Most of the respondents have similar answers when asked if
+                    what comes to their mind when they hear RiderKo.
+                  </p>
+                </div>
               </div>
 
-              <div class="data-info">
-                <p>
-                  Most of the respondents have similar answers when asked if
-                  what comes to their mind when they hear RiderKo.
-                </p>
-              </div>
-            </div>
+              <h3>5. How long have you been using food delivery apps</h3>
+              <div class="data-analysis">
+                <div class="pie-chart one">
+                  <!-- <canvas id="mycanvas-one" width="200" height="180"></canvas> -->
+                  <div class="canvas-cont">
+                    <canvas id="q5-chart" width="50" height="50"></canvas>
+                  </div>
 
-            <div class="second-container">
-              <div class="title" id="title-compet">
-                <h3>Competitive Analysis</h3>
+                  <script>
+                    var xValues = ["No", "Yes"];
+                    var yValues = [9, 7, 1, 3];
+                    var barColors = [
+                      "#ffa283",
+                      "#f3e73a",
+                      "#ffd391",
+                      "#aef393",
+                    ];
+                    new Chart("q5-chart", {
+                      type: "pie",
+                      data: {
+                        datasets: [
+                          {
+                            backgroundColor: barColors,
+                            data: yValues,
+                          },
+                        ],
+                      },
+                      options: {
+                        legend: { display: false },
+                      },
+                    });
+                  </script>
+                  <div class="legend">
+                    <h5>Legend</h5>
+                    <table>
+                      <tr>
+                        <td><span class="dot one"></span></td>
+                        <td>
+                          <p>2 years or more</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot two"></span></td>
+                        <td>
+                          <p>1 Year</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot three"></span></td>
+                        <td>
+                          <p>3-6 Months</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot four"></span></td>
+                        <td>
+                          <p>Less than a month</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="data-info">
+                  <p>
+                    This graph shows that most repondents have been using food
+                    delivery apps for more than 2 years now.
+                  </p>
+                </div>
               </div>
+
+              <h3>
+                6. How often do you use food delivery and courier services?
+              </h3>
+              <div class="data-analysis">
+                <div class="pie-chart one">
+                  <div class="canvas-cont">
+                    <canvas id="q6-chart" width="50" height="50"></canvas>
+                  </div>
+
+                  <script>
+                    var xValues = [
+                      "2-3 times a Month",
+                      "Once a Month",
+                      "More than 4 times a Month",
+                      "Never",
+                    ];
+                    var yValues = [7, 6, 5, 2];
+                    var barColors = [
+                      "#ffa283",
+                      "#f3e73a",
+                      "#ffd391",
+                      "#aef393",
+                    ];
+                    new Chart("q6-chart", {
+                      type: "pie",
+                      data: {
+                        datasets: [
+                          {
+                            backgroundColor: barColors,
+                            data: yValues,
+                          },
+                        ],
+                      },
+                      options: {
+                        legend: { display: false },
+                      },
+                    });
+                  </script>
+                  <div class="legend">
+                    <h5>Legend</h5>
+                    <table>
+                      <tr>
+                        <td><span class="dot one"></span></td>
+                        <td>
+                          <p>2-3 times a Month</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot two"></span></td>
+                        <td>
+                          <p>Once a Month</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot three"></span></td>
+                        <td>
+                          <p>More than 4 times a Month</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot four"></span></td>
+                        <td>
+                          <p>Never</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="data-info">
+                  <p>
+                    Most of the respondents have been frequently using food
+                    delivery apps and others have never tried using it.
+                  </p>
+                </div>
+              </div>
+
+              <h3>7. What kind of promo do you prefer?</h3>
+              <div class="data-analysis">
+                <div class="bar-chart one">
+                  <div class="canvas-cont">
+                    <canvas id="q7-chart" width="100" height="100"></canvas>
+                  </div>
+
+                  <script>
+                    const data = {
+                      labels: [
+                        "Percent Off (25% or 50% off)",
+                        "Flat Promo (10 pesos off)",
+                        "Free Delivery",
+                        "Buy 1 Take 1",
+                      ],
+                      datasets: [
+                        {
+                          data: [12, 5, 14, 9],
+                          backgroundColor: [
+                            "#ffa283",
+                            "#f3e73a",
+                            "#ffd391",
+                            "#aef393",
+                          ],
+                        },
+                      ],
+                    };
+
+                    // config
+                    const config1 = {
+                      type: "bar",
+                      data,
+                      options: {
+                        scales: {
+                          y: {
+                            beginAtZero: true,
+                          },
+                        },
+                      },
+                    };
+                    const myChart = new Chart(
+                      document.getElementById("q7-chart"),
+                      config1
+                    );
+                  </script>
+                  <div class="legend">
+                    <h5>Legend</h5>
+                    <table>
+                      <tr>
+                        <td><span class="dot one"></span></td>
+                        <td>
+                          <p>Percent Off (25% or 50% off)</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot two"></span></td>
+                        <td>
+                          <p>Flat Promo (10 pesos off)</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot three"></span></td>
+                        <td>
+                          <p>Free Delivery</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot four"></span></td>
+                        <td>
+                          <p>Buy 1 Take 1</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="data-info">
+                  <p>
+                    According to this graph, most of them prefer Free Delivery
+                    as a promo from the app.
+                  </p>
+                </div>
+              </div>
+
+              <h3>
+                8. What problems do you usually encounter when using a Food
+                Delivery or Courier App?
+              </h3>
+              <div class="data-analysis">
+                <div class="bar-chart one">
+                  <div class="canvas-cont">
+                    <canvas id="q8-chart" width="300" height="300"></canvas>
+                  </div>
+
+                  <script>
+                    const data1 = {
+                      labels: [
+                        "Customer Service",
+                        "Costly Delivery Fee",
+                        "Late Delivery",
+                        "Log in issues",
+                        "Mismatch of Orders",
+                        "Poor visibility on the courier delivery operation",
+                        "Delivering goods with damage",
+                        "Problems with Payment Method",
+                        "Poor Packaging",
+                        "Missing Items",
+                      ],
+                      datasets: [
+                        {
+                          data: [1, 14, 6, 1, 7, 3, 2, 0, 5, 1],
+                          backgroundColor: [
+                            "#ffa283",
+                            "#f3e73a",
+                            "#ffd391",
+                            "#aef393",
+                            "#fabcfa",
+                            "#98e7ff",
+                            "#fcb5cd",
+                            "#bbfafc",
+                            "#ff9900",
+                            "#74322d",
+                          ],
+                        },
+                      ],
+                    };
+                    const config2 = {
+                      type: "bar",
+                      data: data1,
+                      options: {
+                        scales: {
+                          y: {
+                            beginAtZero: true,
+                          },
+                        },
+                      },
+                    };
+                    const myChart2 = new Chart(
+                      document.getElementById("q8-chart"),
+                      config2
+                    );
+                  </script>
+                  <div class="legend">
+                    <h5>Legend</h5>
+                    <table>
+                      <tr>
+                        <td><span class="dot one"></span></td>
+                        <td>
+                          <p>Customer Service</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot two"></span></td>
+                        <td>
+                          <p>Costly Delivery Fee</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot three"></span></td>
+                        <td>
+                          <p>Late Delivery</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot four"></span></td>
+                        <td>
+                          <p>Log in issues</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot five"></span></td>
+                        <td>
+                          <p>Mismatch of Orders</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot six"></span></td>
+                        <td>
+                          <p>
+                            Poor visibility on the courier delivery operation
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot seven"></span></td>
+                        <td>
+                          <p>Delivering goods with damage</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot eight"></span></td>
+                        <td>
+                          <p>Problems with Payment Method</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot nine"></span></td>
+                        <td>
+                          <p>Poor Packaging</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot ten"></span></td>
+                        <td>
+                          <p>Missing Items</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="data-info">
+                  <p>
+                    Most of the users encounter Costly Delivery Fee when
+                    ordering through the application. Some of them also
+                    encountered Mismatch of the orders and Late Delivery.
+                    Although zero users or none of them has encountered problems
+                    with Payment Method.
+                  </p>
+                </div>
+              </div>
+
+              <h3>
+                9. Why do you like using Food Delivery or Courier Service App?
+              </h3>
+              <div class="data-analysis">
+                <div class="bar-chart one">
+                  <div class="canvas-cont">
+                    <canvas id="q9-chart" width="300" height="300"></canvas>
+                  </div>
+
+                  <script>
+                    const data2 = {
+                      labels: [
+                        "Convenient",
+                        "Accessible",
+                        "Good Delivery Experience",
+
+                        "Has promotions, discount, cashback",
+                        "Variety of Options",
+                        "Real time updates",
+                        "On time Delivery",
+                      ],
+                      datasets: [
+                        {
+                          data: [18, 13, 5, 10, 10, 2, 1],
+                          backgroundColor: [
+                            "#ffa283",
+                            "#f3e73a",
+                            "#ffd391",
+                            "#aef393",
+                            "#fabcfa",
+                            "#98e7ff",
+                            "#fcb5cd",
+                          ],
+                        },
+                      ],
+                    };
+                    const config3 = {
+                      type: "bar",
+                      data: data2,
+                      options: {
+                        scales: {
+                          y: {
+                            beginAtZero: true,
+                          },
+                        },
+                      },
+                    };
+                    const myChart3 = new Chart(
+                      document.getElementById("q9-chart"),
+                      config3
+                    );
+                  </script>
+                  <div class="legend">
+                    <h5>Legend</h5>
+                    <table>
+                      <tr>
+                        <td><span class="dot one"></span></td>
+                        <td>
+                          <p>Customer Service</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot two"></span></td>
+                        <td>
+                          <p>Costly Delivery Fee</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot three"></span></td>
+                        <td>
+                          <p>Late Delivery</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot four"></span></td>
+                        <td>
+                          <p>Log in issues</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot five"></span></td>
+                        <td>
+                          <p>Mismatch of Orders</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot six"></span></td>
+                        <td>
+                          <p>
+                            Poor visibility on the courier delivery operation
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot seven"></span></td>
+                        <td>
+                          <p>Delivering goods with damage</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot eight"></span></td>
+                        <td>
+                          <p>Problems with Payment Method</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot nine"></span></td>
+                        <td>
+                          <p>Poor Packaging</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><span class="dot ten"></span></td>
+                        <td>
+                          <p>Missing Items</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="data-info">
+                  <p>
+                    Most of the users encounter Costly Delivery Fee when
+                    ordering through the application. Some of them also
+                    encountered Mismatch of the orders and Late Delivery.
+                    Although zero users or none of them has encountered problems
+                    with Payment Method.
+                  </p>
+                </div>
+              </div>
+
+              <h3>
+                What feature would you like a delivery app in general to have to
+                improve their service?
+              </h3>
               <div class="second-cont riderko-compet">
-                <img
-                  src="../assets/projects/five-riderko/img_riderko-competanalysis.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="second-container">
-              <div class="title" id="title-swot">
-                <h3>SWOT Analysis</h3>
-              </div>
-              <div class="second-cont riderko-swot">
-                <img
-                  src="../assets/projects/five-riderko/img_riderko-swot.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="second-container">
-              <div class="title" id="title-solution">
-                <h3>Solution</h3>
-              </div>
-              <div class="second-cont riderko-solution">
-                <ul>
-                  <li>Support Local (Basta Lokal, i-RiderKo na yan)</li>
+                <div class="data-analysis">
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-q10.png"
+                    alt=""
+                  />
+                </div>
 
-                  <li>OTP for delivery confirmation</li>
-                  <li>Continuous app updates</li>
-                  <li>
-                    Partnerships with brands, celebrities, universities and
-                    companies
-                  </li>
-                  <li>Promotional Materials</li>
-                  <li>Internships</li>
-                  <li>Re-design Social Media Account</li>
-                </ul>
+                <div class="data-info">
+                  <p>
+                    The suggestions or recommendations provided by the users of
+                    similar apps help to better understand what is can be
+                    improved or can be added as a feature of the application.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="second-container">
-              <div class="title" id="title-ia">
-                <h3>Information Architecture</h3>
-              </div>
-              <div class="second-cont riderko-ia">
-                <img
-                  src="../assets/projects/five-riderko/img_riderko-infoarchi.png"
-                  alt=""
-                />
-              </div>
-            </div>
 
-            <div class="second-container">
-              <div class="title" id="title-ui">
-                <h3>High-Fidelity Wireframe</h3>
+              <div class="second-container">
+                <div class="title" id="title-compet">
+                  <h3>Competitive Analysis</h3>
+                </div>
+                <div class="second-cont riderko-compet">
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-competanalysis.png"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="second-cont riderko-wireframes">
-                <img
-                  src="../assets/projects/five-riderko/img_riderko-ui1.png"
-                  alt=""
-                />
-                <img
-                  src="../assets/projects/five-riderko/img_riderko-ui2.png"
-                  alt=""
-                />
-                <img
-                  src="../assets/projects/five-riderko/img_riderko-ui3.png"
-                  alt=""
-                />
-                <img
-                  src="../assets/projects/five-riderko/img_riderko-ui4.png"
-                  alt=""
-                />
-                <img
-                  src="../assets/projects/five-riderko/img_riderko-ui5.png"
-                  alt=""
-                />
-                <img
-                  src="../assets/projects/five-riderko/img_riderko-ui6.png"
-                  alt=""
-                />
-                <img
-                  src="../assets/projects/five-riderko/img_riderko-ui7.png"
-                  alt=""
-                />
-                <img
-                  src="../assets/projects/five-riderko/img_riderko-ui8.png"
-                  alt=""
-                />
-                <img
-                  src="../assets/projects/five-riderko/img_riderko-ui9.png"
-                  alt=""
-                />
-                <img
-                  src="../assets/projects/five-riderko/img_riderko-ui10.png"
-                  alt=""
-                />
-                <img
-                  src="../assets/projects/five-riderko/img_riderko-ui11.png"
-                  alt=""
-                />
-                <img
-                  src="../assets/projects/five-riderko/img_riderko-ui12.png"
-                  alt=""
-                />
-                <img
-                  src="../assets/projects/five-riderko/img_riderko-ui13.png"
-                  alt=""
-                />
+              <div class="second-container">
+                <div class="title" id="title-swot">
+                  <h3>SWOT Analysis</h3>
+                </div>
+                <div class="second-cont riderko-swot">
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-swot.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="second-container">
+                <div class="title" id="title-solution">
+                  <h3>Solution</h3>
+                </div>
+                <div class="second-cont riderko-solution">
+                  <ul>
+                    <li>Support Local (Basta Lokal, i-RiderKo na yan)</li>
+
+                    <li>OTP for delivery confirmation</li>
+                    <li>Continuous app updates</li>
+                    <li>
+                      Partnerships with brands, celebrities, universities and
+                      companies
+                    </li>
+                    <li>Promotional Materials</li>
+                    <li>Internships</li>
+                    <li>Re-design Social Media Account</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="second-container">
+                <div class="title" id="title-ia">
+                  <h3>Information Architecture</h3>
+                </div>
+                <div class="second-cont riderko-ia">
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-infoarchi.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="second-container">
+                <div class="title" id="title-ui">
+                  <h3>High-Fidelity Wireframe</h3>
+                </div>
+                <div class="second-cont riderko-wireframes">
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui1.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui2.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui3.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui4.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui5.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui6.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui7.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui8.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui9.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui10.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui11.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui12.png"
+                    alt=""
+                  />
+                  <img
+                    src="../assets/projects/five-riderko/img_riderko-ui13.png"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>
