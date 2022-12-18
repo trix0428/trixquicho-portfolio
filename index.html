@@ -971,14 +971,13 @@
           .getElementById("contact-form")
           .addEventListener("submit", function (event) {
             event.preventDefault();
+
             if (
               this.name.value == "" ||
               this.email.value == "" ||
               this.subject.value == "" ||
               this.message.value == ""
             ) {
-              //actually no need na tong condition sa taas or validation mo kase may required attribute ka naman sa input tag
-              //pero kung mag sspecial validation ka like sa name bawal may numbers tas correct email format, doon mo lang to pwedeng gamitin
               alert("Empty");
               console.log("Empty");
             } else {
@@ -1004,25 +1003,25 @@
           });
       };
 
-      function success() {
-        swal.fire(
-          "Message sent successfully!",
-          "Thank you for reaching out.",
-          "success"
-        );
-      }
+      // function success() {
+      //   swal.fire(
+      //     "Message sent successfully!",
+      //     "Thank you for reaching out.",
+      //     "success"
+      //   );
+      // }
 
-      function error() {
-        swal.fire("Message not delivered!", "Please try again.", "error");
-      }
+      // function error() {
+      //   swal.fire("Message not delivered!", "Please try again.", "error");
+      // }
 
-      function inputempty() {
-        swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: "Fields cannot be empty!",
-        });
-      }
+      // function inputempty() {
+      //   swal.fire({
+      //     icon: "error",
+      //     title: "Oops...",
+      //     text: "Fields cannot be empty!",
+      //   });
+      // }
     </script>
 
     <!-- SWEETALERT -->

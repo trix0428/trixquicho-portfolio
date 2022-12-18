@@ -155,16 +155,16 @@ btn_hobbies.addEventListener("click", () => {
 
 // CONTACT
 
-// function SendMail() {
-//   var params = {
-//     subject_id: document.getElementById("subject_id").value,
-//     message_id: document.getElementById("message_id").value,
-//     name_id: document.getElementById("name_id").value,
-//     email_id: document.getElementById("email_id").value,
-//   };
-//   emailjs
-//     .send("service_xyvk7um", "template_1gkv9zf", params)
-//     .then(function (res) {
-//       alert("Success!" + res.status);
-//     });
-// }
+function SendMail() {
+  var params = {
+    subject_id: document.getElementById("subject_id").value,
+    message_id: document.getElementById("message_id").value,
+    name_id: document.getElementById("name_id").value,
+    email_id: document.getElementById("email_id").value,
+  };
+  // emailjs
+  //   .send("service_xyvk7um", "template_1gkv9zf", params)
+  //   .then(function (res) {
+  //     alert("Success!" + res.status);
+  //   });
+}
