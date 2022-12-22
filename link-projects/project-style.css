@@ -26,7 +26,12 @@ html {
   width: auto;
   background-image: url("../assets/projects/two-yesdoc/img_yesdoc-one.png");
 }
-.parallax-bg-holder.five {
+.parallax-bg-holder.four {
+  min-height: 300px;
+  width: auto;
+  background-image: url("../assets/projects/four-samquicksal/img_samquicksal-one.png");
+}
+.pa .parallax-bg-holder.five {
   min-height: 300px;
   width: auto;
   background-image: url("../assets/projects/five-riderko/img_riderko-cover.png");
