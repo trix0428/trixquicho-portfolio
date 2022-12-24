@@ -83,7 +83,8 @@ html {
   flex-direction: column;
 }
 .sub-list.title,
-.second-container .title {
+.second-container .title,
+.second-container h4 {
   font-family: montserrat;
   font-weight: 600;
   color: #da2d5a;
@@ -354,12 +355,20 @@ footer p {
 
 @media (max-width: 425px) {
   .parallax-title {
-    font-size: 70px;
+    font-size: 50px;
+  }
+  .second-cont iframe {
+    height: 400px;
   }
   .footer-navigation a {
     color: #da2d5a;
     font-size: 14px;
     padding: 10px;
     font-weight: 600;
+  }
+}
+@media (max-width: 320px) {
+  .parallax-title {
+    font-size: 36px;
   }
 }
