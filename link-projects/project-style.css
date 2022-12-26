@@ -182,8 +182,7 @@ html {
   line-height: 30px;
   text-align: justify;
 }
-img#cc-mockup-card {
-}
+
 img#yesdoc-ui {
   box-shadow: 5px 5px 20px #d9d9d9, -5px -5px 20px #ffffff;
 }
@@ -212,10 +211,7 @@ img#yesdoc-ui {
 .second-cont.riderko-wireframes {
   grid-gap: 0;
 }
-.second-cont.riderko-datagather {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
-}
+
 .data-analysis {
   margin-bottom: 10%;
 }
