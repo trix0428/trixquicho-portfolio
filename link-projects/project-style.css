@@ -84,7 +84,7 @@ html {
 }
 .sub-list.title,
 .second-container .title,
-.second-container h4 {
+.second-container h3 {
   font-family: montserrat;
   font-weight: 600;
   color: #da2d5a;
@@ -202,7 +202,7 @@ img#yesdoc-ui {
 }
 
 /* RIDERKO */
-.second-cont.riderko-solution {
+.second-cont ul li {
   line-height: 200%;
 }
 .second-cont.riderko-wireframes img {
@@ -275,6 +275,32 @@ td {
   /* margin-left: 10px; */
   font-size: 12px;
 }
+
+.takeaway-subtitle {
+  margin: 5% 0;
+}
+.riderko-solution {
+  margin: 5%;
+}
+/* TO TOP */
+.to-top {
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #da2d5a;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
 /* FOOTER */
 footer {
   background-color: #ffdce6;
