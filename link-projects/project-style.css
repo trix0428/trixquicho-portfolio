@@ -26,6 +26,11 @@ html {
   width: auto;
   background-image: url("../assets/projects/two-yesdoc/img_yesdoc-one.png");
 }
+.parallax-bg-holder.three {
+  min-height: 300px;
+  width: auto;
+  background-image: url("../assets/projects/three-webjam/img_webjam-one.png");
+}
 .parallax-bg-holder.four {
   min-height: 300px;
   width: auto;
